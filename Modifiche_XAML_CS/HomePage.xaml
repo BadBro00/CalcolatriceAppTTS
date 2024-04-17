@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<views:MvxContentPage x:TypeArguments="viewModels:HomeViewModel"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:views="clr-namespace:MvvmCross.Forms.Views;assembly=MvvmCross.Forms"
+    xmlns:mvx="clr-namespace:MvvmCross.Forms.Bindings;assembly=MvvmCross.Forms"
+    xmlns:local="clr-namespace:MyMvvmCrossApp1.UI.Pages"
+    x:Class="MyMvvmCrossApp1.UI.Pages.HomePage"
+    xmlns:viewModels="clr-namespace:MyMvvmCrossApp1.Core.ViewModels.Home;assembly=MyMvvmCrossApp1.Core"
+                      Title="Main page">
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry Text="0" x:Name="NumEntry"/>
+            <Grid RowDefinitions="4*,4*,4*">
+                <Grid Grid.Row="0" ColumnDefinitions="4*,4*,4*">
+                    <Button Text="7" Grid.Row="0" Grid.Column="0" Clicked="Click7" x:Name="Butt7">
+
+                    </Button>
+                    <Button Text="8" Grid.Row="0" Grid.Column="1" Clicked="Click8" x:Name="Butt8">
+
+                    </Button>
+                    <Button Text="9" Grid.Row="0" Grid.Column="2" Clicked="Click9" x:Name="Butt9">
+
+                    </Button>
+                    <Button Text="4" Grid.Row="1" Grid.Column="0" Clicked="Click4" x:Name="Butt4">
+
+                    </Button>
+                    <Button Text="5" Grid.Row="1" Grid.Column="1" Clicked="Click5" x:Name="Butt5">
+
+                    </Button>
+                    <Button Text="6" Grid.Row="1" Grid.Column="2" Clicked="Click6" x:Name="Butt6">
+
+                    </Button>
+                    <Button Text="1" Grid.Row="2" Grid.Column="0" Clicked="Click1" x:Name="Butt1">
+
+                    </Button>
+                    <Button Text="2" Grid.Row="2" Grid.Column="1" Clicked="Click2" x:Name="Butt2">
+
+                    </Button>
+                    <Button Text="3" Grid.Row="2" Grid.Column="2" Clicked="Click3" x:Name="Butt3">
+
+                    </Button>
+                    <Button Text="-" Grid.Row="3" Grid.Column="0" Clicked="MinusClick" x:Name="Minus">
+                        
+                    </Button>
+                    <Button Text="+" Grid.Row="3" Grid.Column="1" Clicked="PlusClick" x:Name="Plus">
+                        
+                    </Button>
+                </Grid>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</views:MvxContentPage>
